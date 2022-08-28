@@ -14,7 +14,7 @@ public class Provincia {
 
     private String provincia;
 
-    @OneToMany(mappedBy = "idProvincia")
+    @OneToMany(mappedBy = "provincia")
     private List<Localidad> localidades;
 
     public Integer getIdProvincia() {

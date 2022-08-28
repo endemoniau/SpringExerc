@@ -14,12 +14,15 @@ public class Localidad {
 
     private String localidad;
 
+    @Column(name="id_provincia")
+    private Integer idProvincia;
+
     @ManyToOne
     @JoinColumn(name="id_provincia", insertable = false, updatable = false)
     private Provincia provincia;
 
-    @OneToMany(mappedBy = "localidad")
-    private List<Locacion> locaciones;
+/*    @OneToMany(mappedBy = "localidad")
+    private List<Locacion> locaciones;*/
 
     public Integer getIdLocalidad() {
         return idLocalidad;
@@ -37,19 +40,20 @@ public class Localidad {
         this.localidad = localidad;
     }
 
-    public Provincia getIdProvincia() {
+    public Integer getIdProvincia() {
+        return idProvincia;
+    }
+
+    public void setIdProvincia(Integer idProvincia) {
+        this.idProvincia = idProvincia;
+    }
+
+    public Provincia getProvincia() {
         return provincia;
     }
 
-    public void setIdProvincia(Provincia idProvincia) {
-        this.provincia = idProvincia;
+    public void setProvincia(Provincia provincia) {
+        this.provincia = provincia;
     }
 
-    public List<Locacion> getLocaciones() {
-        return locaciones;
-    }
-
-    public void setLocaciones(List<Locacion> locaciones) {
-        this.locaciones = locaciones;
-    }
 }
