@@ -1,7 +1,6 @@
 package com.elendemo.locaciones.domain.service;
 
 import com.elendemo.locaciones.domain.Locality;
-import com.elendemo.locaciones.domain.Province;
 import com.elendemo.locaciones.domain.repository.LocalityRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

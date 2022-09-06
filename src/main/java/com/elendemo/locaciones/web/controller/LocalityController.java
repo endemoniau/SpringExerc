@@ -4,7 +4,6 @@ import com.elendemo.locaciones.domain.Locality;
 import com.elendemo.locaciones.domain.service.LocalityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 import java.util.Optional;
 

@@ -1,10 +1,7 @@
 package com.elendemo.locaciones.persistence.entity;
 
-import jdk.jfr.Event;
-
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 
 @Entity

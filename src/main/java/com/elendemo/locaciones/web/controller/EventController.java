@@ -4,7 +4,6 @@ import com.elendemo.locaciones.domain.Event;
 import com.elendemo.locaciones.domain.service.EventService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 import java.util.Optional;
 

@@ -4,7 +4,6 @@ import com.elendemo.locaciones.domain.Locality;
 import com.elendemo.locaciones.domain.repository.LocalityRepository;
 import com.elendemo.locaciones.persistence.crud.LocalidadCrudRepository;
 import com.elendemo.locaciones.persistence.entity.Localidad;
-import com.elendemo.locaciones.persistence.entity.Provincia;
 import com.elendemo.locaciones.persistence.mapper.LocalityMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -40,18 +39,6 @@ public class LocalidadRepository implements LocalityRepository {
         Localidad localidad= mapper.toLocalidad(locality);
         return mapper.toLocality(localidadCrudRepository.save(localidad));
     }
-/*
-    public Optional<Localidad> getLocalidad(int idLocalidad){
-        return localidadCrudRepository.findById(idLocalidad);
-    }
-
-    public List<Localidad> getLocalidadesByProvincia(int idProvincia){
-        return localidadCrudRepository.findByIdProvincia(idProvincia);
-    }
-
-    public Localidad save (Localidad localidad){
-        return localidadCrudRepository.save(localidad);
-    }*/
 
     public void delete (int localityId){
         localidadCrudRepository.deleteById(localityId);

@@ -20,6 +20,7 @@ public class Hospedaje {
 
     private String hospedaje;
 
+    @Column(name="redsocial")
     private String redSocial;
 
     @OneToMany(mappedBy = "hospedaje")
